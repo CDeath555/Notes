@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(26, 26, 26);
+}
+#title {
+    display: flex;
+    justify-content: center;
+    color:rgb(170, 196, 170);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.column {
+    color:rgb(15, 163, 165)
+    
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between
+}
+
