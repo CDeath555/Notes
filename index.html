@@ -37,8 +37,27 @@
                     <li>&lt;<em>ul</em>&gt; - Creates an unordered list of items.
                         <ul><li>&lt;ul&gt; &lt;li&gt; example. &lt;/li&gt; &lt;/ul&gt; </li></ul>
                     </li>
-                    <li>&lt;li&gt;&lt;/li&gt; - list element. Creates a list item.</li>
-                    <li>&lt;em&gt;&lt;/em&gt; - emphasis element. Used to emphasize text.</li>
+                    <li>&lt;li&gt;&lt;/li&gt; - List element. Creates a list item.</li>
+                    <li>&lt;em&gt;&lt;/em&gt; - Emphasis element. Used to emphasize text.</li>
+                    <li>&lt;footer&gt;&lt;/footer&gt; - Define the footer for a document. contains info about the author, etc.</li>
+                    <li>&lt;div&gt; &lt;/div&gt; - Dividing elements, used alot with CSS.</li>
+                    <li> &lt;script&gt; &lt;/script&gt; - Used to embed executable code, used with Javascript. Currently I'm unfamiliar witht this one.</li>
+                    <li> &lt;button&gt; &lt;/button&gt; - Turns the text into a clickable button
+                        <ul><li>example: &lt;button class="btn" id=example-btn"&gt;example button&lt;/button&gt;</li></ul>
+                    </li>
+                    <li>&lt;figure&gt; &lt;/figure&gt; - Used to group an image with a caption.</li>
+                    <li> &lt;audio src=" "&gt;&lt;/audio&gt; - Allows audio to play on your website</li>
+                    <li> &lt;video src=" "&gt;&lt;/video&gt; - Allows video to play on your website</li>
+                    <li>&lt;source src=" "&gt; - Void element. Used in videos, the source element tells the browser to select the video with the format that will work for it. Use this in conjunction with 'type' attribute, to tell the browser which video formats are being uses. ie; MP4, WEBM, OGG, or .mov(quicktime for apple.) 
+                        <ul>
+                            <li>&lt;source src="C:/workspace/videos/example1.mov" type="video/mov">&lt;/source&gt;</li>
+                            <li>&lt;source src="C:/workspace/videos/example2.webm" type="video/webm"&gt;</li>
+		                    <li>&lt;source src="C:/workspace/videos/example3.mp4" type="video/mp4"&gt;</li></ul>
+                    </li>
+                    <li>&lt;iframe src=" " &gt;&lt;/iframe&gt; - Used to embed another webpage within the current webpage. </li>
+
+
+                    
 
                         
              </ul>
@@ -59,6 +78,7 @@
                 <li><u>loop</u> - boolean attribute which loops audio</li>
                 <li><u>poster=" "</u> - when a video is loading, this image will display until the video loads
 example of audio with muted loop control</li>
+
                     
                 </ul>
      </div>
@@ -68,8 +88,21 @@ example of audio with muted loop control</li>
         <h2>Vocabulary</h2>
             </div>
             <div class="vocab">
-            <li>HTML entities</li>
-            <li>Boolean Attribute  </li>
+            <li>HTML entities
+                <ul><li>used to represent special characters in HTML
+                    <ul><li>Named reference --> &amp;lt; &amp;gt; examples of the &lt; and &gt; tags. </li>
+                    <li>Decimal numeric reference--> &amp;&#35(number). &amp;&#35 165</li>
+                    <li>Hexadecimal reference--> Same idea, different execution. &amp;   &#35x20AC</li></ul>
+                        </li>
+                </ul>
+            </li>
+            
+            <li>Boolean Attribute
+                <ul><li>A boolean attribute in HTML that represents true or false values based on its presence or absence on an element.
+                     <ul><li>example : &lt;input type="checkbox" <em>checked</em> /&gt;</li></ul>
+                </li></ul>
+            </li>
+
             </div>
     
 </body>
