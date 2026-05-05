@@ -8,12 +8,26 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .column {
-    color:rgb(15, 163, 165)
-    
+    color:rgb(172, 234, 235);
+    flex: 1;
+       
 }
 
 .section1 {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding:1%;
+    
+    
 }
 
+#vocab {
+    color:rgb(119, 25, 195);
+    background-color: gold;
+    width: 125px;
+}
+
+.vocab {
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
