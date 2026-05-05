@@ -8,10 +8,11 @@
     <link rel="icon" href="imgs/notepad-svgrepo-com.svg">
 </head>
 <body>
+    <!-- Testing to see if moving the files to the new folder works -->
     <h1 id="title">Coding </h1>
     <div class="section1">
         <div class="column">
-            <h2>Elements</h2>
+            <h2 id="elements">Elements</h2>
                 <ul>
                     <li>&lt;h1&gt;&lt;/h1&gt; - Header
                         <ul><li>&lt;h1&gt;This is an example&lt;/h1&gt;</li></ul>
@@ -36,19 +37,30 @@
                     <li>&lt;<em>ul</em>&gt; - Creates an unordered list of items.
                         <ul><li>&lt;ul&gt; &lt;li&gt; example. &lt;/li&gt; &lt;/ul&gt; </li></ul>
                     </li>
+                    <li>&lt;li&gt;&lt;/li&gt; - list element. Creates a list item.</li>
+                    <li>&lt;em&gt;&lt;/em&gt; - emphasis element. Used to emphasize text.</li>
 
                         
              </ul>
          </div>
         
      <div class="column">
-        <h2>Attributes</h2>
+        <h2 id="att">Attributes</h2>
             <ul>
-                <li>test</li>
-                <li>testing again with a much longer sentence</li>
-                <li>Here's an example of something I've added at work.</li>
-                <li>We'll test and see when I get home how it worked.</li>
-            </ul>
+                <li><u>src=" "</u> - Used to pull the image/video from a specific source</li>
+                <li><u>alt=" "</u> - Used to provide descriptors in the code. accessibility purposes.</li>
+                <li><u>target="_blank"&gt;text here&lt;</u> - enables link to open in a new browser tab. the text in the brackets is to write the text you want the hyperlink to appear in.</li>
+                <li><u>type=" "</u> - used to discern the specific type of nature of an element. like 'checkbox' , or mp4.</li>
+                <li><u>rel=" "</u> - specify relationship between linked resource and HTML document. (Such as preconnect, or icon)</li>
+                <li><u>id=" "</u> - an identifier attribute. Used to identify something. Should not be used more than once. NO SPACES in the identifiers. If you want to target a specific element, it is best to use id because those values need to be unique. </li>
+                <li><u>class=" "</u> - like id, an identifier attribute. Can contain spaces. Classes are best used when you want to apply a set of styles to many elements. </li>
+                <li><u>controls</u> - used with &lt;audio&gt; element. 
+                    <ul><li>example: &lt;audio&gt; src=" "> controls&lt;/audio&gt;. it's also a boolean attribute</li></ul></li>
+                <li><u>loop</u> - boolean attribute which loops audio</li>
+                <li><u>poster=" "</u> - when a video is loading, this image will display until the video loads
+example of audio with muted loop control</li>
+                    
+                </ul>
      </div>
     </div>
 
@@ -57,6 +69,7 @@
             </div>
             <div class="vocab">
             <li>HTML entities</li>
+            <li>Boolean Attribute  </li>
             </div>
     
 </body>

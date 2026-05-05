@@ -10,8 +10,26 @@ body {
 .column {
     color:rgb(172, 234, 235);
     flex: 1;
+    
        
 }
+
+#elements {
+    color:rgb(240, 150, 6);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#att {
+    color:rgb(255, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Descendant combinator for nested list items, examples. */
+li li {
+    color:rgb(240, 150, 6)
+}
+
+
 
 .section1 {
     display: flex;
