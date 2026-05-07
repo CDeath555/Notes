@@ -90,10 +90,12 @@ example of audio with muted loop control</li>
             <div class="vocab">
             <li>HTML entities
                 <ul><li>used to represent special characters in HTML
-                    <ul><li>Named reference --> &amp;lt; &amp;gt; examples of the &lt; and &gt; tags. </li>
-                    <li>Decimal numeric reference--> &amp;&#35(number). &amp;&#35 165</li>
-                    <li>Hexadecimal reference--> Same idea, different execution. &amp;   &#35x20AC</li></ul>
+                    <ul><li><span style="color: red;">Named reference</span> --> &amp;lt; &amp;gt; examples of the &lt; and &gt; tags. </li>
+                    <li><span style="color: red;">Decimal numeric reference</span>--> &amp;&#35(number). &amp;&#35 165</li>
+                    <li><span style="color: red;">Hexadecimal reference</span>--> Same idea, different execution. &amp;   &#35x20AC</li></ul>
                         </li>
+                        
+                </ul>
                 </ul>
             </li>
             
@@ -102,7 +104,38 @@ example of audio with muted loop control</li>
                      <ul><li>example : &lt;input type="checkbox" <em>checked</em> /&gt;</li></ul>
                 </li></ul>
             </li>
+            <li>Inline element
+                <ul><li>Elements that do not start on a new line and only take up as much width as necessary, like &lt;img&gt;, &lt;span&gt;, and &lt;a&gt;</li></ul>
+            </li>
+            <li>Block element
+                <ul><li>Elements that take up the full width available by default, like headers or paragraphs.</li></ul></li>
+            </li> 
 
+            </div>
+
+            <div id="CSS">
+                <h2 class="CSS">CSS notes</h2>
+                <div class="css-body">
+                    <p>The default styling for a lot of elements is "display: block." This ensures the element takes the full width of the container.  </p>
+
+                <h2 class="css-properties">Properties</h2>
+                <!-- The property is display, the VALUE is inline, or inline-block -->
+                    <p><span style="color: rgb(135, 186, 58);">display: inline</span> is used for <span style="color: red;">smaller text patches</span> in line, or specific styles or parts of a paragraph.</p>
+                    <p><span style="color: rgb(135, 186, 58);">display: inline-block</span> utilizes both inline and block properties, allowing elements to sit inline while still accepting <span style="color: red;">width and height values</span>.</p>
+                    <h3 id="margin">Margin</h3>
+                        <p> Margin-top: 10px; This adds space above each list item.</p>
+                        <ul><li><span style="color: gold;">Utilizing this, I can target the spacing of items.</span> </li></ul>
+                        <p>Margin: 10px; applies the spacing to all four sides.</p>
+                        <p>Margin: 10px 20px; applies the spacing to the top/bottom and left/right respectively.</p>
+                    <h3 id="padding">Padding</h3>
+                        <p>Padding is the space between the content and the border of an element. </p>
+                        <p>Padding: 10px; applies the padding to all four sides.</p>
+                        <p>Padding: 10px 20px; applies the padding to the top/bottom and left/right respectively.</p>
+                        <div class="container"><p class="margin-padding">This is an example</p></div>
+                        <div class="container2"><p class="margin-padding2">This is another example</p></div>
+                </div>
+
+                
             </div>
     
 </body>
