@@ -7,12 +7,21 @@ body {
     color:rgb(170, 196, 170);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.column {
-    color:rgb(172, 234, 235);
-    flex: 1;
-    
-       
+/* COLUMN DIVIDERS: */
+.section1 {
+   border: 2px solid white;
+   display: flex;
+   padding: 0px 5px 0px 5px; 
 }
+.column1, .column2 {
+    color:rgb(172, 234, 235);
+    display: flex;
+    flex-direction: column; 
+    width: 49%;
+     
+}
+
+
 
 #elements {
     color:rgb(240, 150, 6);
@@ -31,29 +40,54 @@ li li {
 
 
 
-.section1 {
-    display: flex;
-    justify-content: space-between;
-    padding:1%;
-    
-    
-}
 
-#vocab {
+
+#vocabulary {
     color:rgb(119, 25, 195);
     background-color: gold;
     width: 125px;
 }
 
 .vocab {
-    color: blueviolet;
+    color: rgb(22, 248, 233);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.example {
+    color:rgb(40, 221, 8);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 
 .CSS {
     color:rgb(161, 46, 46);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
+}
+/* Remember that when doing padding or margin, DO NOT separate each value with a semicolon. */
+.css-container {
+    border: 2px solid white;
+    display: inline-block;
+    padding: 5px 20px 5px 20px
+
+}
+.selector {
+    color:rgb(66, 239, 44);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+}
+
+.property {
+    color:rgb(207, 237, 38);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+}
+
+.value {
+    color:rgb(25, 198, 189);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
 }
 
 .css-body p {
@@ -72,11 +106,14 @@ li li {
     color:rgb(70, 193, 178);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+    display: flex;
+    justify-content: column;
 }
 #padding {
     color:rgb(70, 193, 178);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+
 }
 
 li {
