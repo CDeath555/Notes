@@ -9,17 +9,19 @@ body {
 }
 /* COLUMN DIVIDERS: */
 .section1 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px 5px 10px;
    
-   display: flex;
-   padding: 0px 5px 5px 10px; 
 }
 .column1, .column2 {
     color:rgb(172, 234, 235);
     display: flex;
-    flex-direction: column; 
+    flex-flow: column; 
     width: 49%;
     padding: 0px 5px 0px 5px;
     overflow-wrap:anywhere; 
+    max-width: 350px;
     /* ^^ this (overflow-wrap:anywhere) was used to wrap long lines of continuous text from breaching into neighboring columns. */
 
      
@@ -35,6 +37,7 @@ body {
 #att {
     color:rgb(255, 0, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 30px;
 }
 
 /* Descendant combinator for nested list items, examples. */
@@ -43,13 +46,16 @@ li li {
 }
 
 
-
-
-
 #vocabulary {
+    display: flex;
+    justify-content: center;
     color:rgb(119, 25, 195);
-    background-color: gold;
-    width: 125px;
+    background-color: yellow;
+    padding: 5px;
+    
+    
+    
+    
 }
 
 .vocab {
@@ -159,4 +165,30 @@ li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
     
+}
+
+#flex {
+    display: flex;
+    Justify-content: center;
+    color:rgb(255, 0, 0);
+    font-size: 30px;
+}
+h3 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flexbox-term {
+    color:rgb(230, 124, 18);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.flexbox-li {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
