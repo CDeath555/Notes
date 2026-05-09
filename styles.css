@@ -9,9 +9,9 @@ body {
 }
 /* COLUMN DIVIDERS: */
 .section1 {
-   border: 2px solid white;
+   
    display: flex;
-   padding: 0px 5px 0px 5px; 
+   padding: 0px 5px 5px 10px; 
 }
 .column1, .column2 {
     color:rgb(172, 234, 235);
@@ -20,7 +20,7 @@ body {
     width: 49%;
     padding: 0px 5px 0px 5px;
     overflow-wrap:anywhere; 
-    /* ^^ this was used to wrap long lines of continuous text from breaching into neighboring columns. */
+    /* ^^ this (overflow-wrap:anywhere) was used to wrap long lines of continuous text from breaching into neighboring columns. */
 
      
 }
@@ -152,4 +152,11 @@ li {
     display: inline-block;
     border: 2px solid white;
     background-color: rgb(177, 84, 196);
+}
+
+.three-types-of-styling {
+    color:rgb(255, 213, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    
 }
