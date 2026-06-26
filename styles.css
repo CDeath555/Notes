@@ -228,3 +228,12 @@ p {
     
 }
 
+.functionterm {
+    color:rgb(107, 209, 232);
+    font-size: 25px;
+}
+.functiondef {
+    color:rgb(49, 134, 80);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
