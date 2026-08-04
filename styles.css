@@ -205,7 +205,36 @@ p {
     margin-top: 20px;
     
 }
+#javascriptbutton {
+    font-size: 30px;
+    font-family: 'Franklin Gothic medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(246, 234, 4);
+    border-radius: 10px;
+    border: 1px solid rgb(243, 105, 105);
+    display:block;
+    margin:5px;
+}
 
+#javascriptbutton:hover {
+    background-color: rgb(198, 188, 4);
+    color: black;
+    cursor: pointer;
+    }
+#javascriptbutton:active {
+    background-color: rgb(142, 134, 0);
+    color: black;
+    cursor: pointer;
+    }
+    
+     
+
+#javascript {
+    display: none;
+}
+
+#javascript.isVisible {
+    display: block;
+}
     
 .javascript {
     color:salmon;
@@ -221,19 +250,88 @@ p {
     font-size: 15px;
 }
     
-.functions {
+.methods {
     color:rgb(255, 0, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     
 }
 
-.functionterm {
+.methodterm {
     color:rgb(107, 209, 232);
     font-size: 25px;
 }
-.functiondef {
+.methoddef {
     color:rgb(49, 134, 80);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
+}
+
+.strings {
+    color:rgb(255, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+
+.string-container {
+    border: 2px solid rgb(100, 12, 12);
+    padding: 5px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+}
+
+.newlinecontainer {
+    border: 2px solid rgb(100, 12, 12);
+    padding: 5px;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+}
+
+#mathTitle {
+    color:rgb(255, 244, 36);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+#mathBtn {
+    font-size: 30px;
+    font-family: 'Franklin Gothic medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(246, 234, 4);
+    border-radius: 10px;
+    border: 1px solid rgb(243, 105, 105);
+    display:block;
+    margin: 5px;
+    
+     
+}
+#mathBtn:hover {
+    background-color: rgb(198, 188, 4);
+    color: black;
+    cursor: pointer;
+    }
+#mathBtn:active {
+    background-color: rgb(142, 134, 0);
+    color: black;
+    cursor: pointer;
+    }
+#math {
+    display: none;
+
+}
+
+#math.isVisible {
+    display: block;
+}
+.mathSection {
+    color:rgb(38, 224, 72);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    
+}
+
+
+
+mathSection, li {
+    color:rgb(238, 246, 239);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
 }

@@ -307,7 +307,8 @@
                 <li class="flexbox-li">space-between</li>
             </ul>
     </div>
-    <div>
+    <button id="javascriptbutton">JavaScript Section</button>
+    <div id="javascript">
         <h1 class="javascript">JavaScript</h1>
         <h3>Data types:</h3>
         <ul>
@@ -361,39 +362,184 @@
                 </ul>
             </li>
         </ul>
-        <h2 class="functions">Functions</h2>
+
+        <!-- JavaScript Strings -->
+
+        <h2 class="strings">Strings</h2>
+            <p>Strings are sequences of characters enclosed in single or double quotes. They can be manipulated using various methods and operators.</p>
+            <p>To access a character from the string use a bracket notation and pass in the index number:</p>
+            <div class="string-container">
+                <p>let message = "Hello, World!";</p>
+                <p>console.log(message[0]); // Output: H</p>
+            </div>
+            <p> \n Newline. You can use this to create a new line in your string. </p>
+            <div class="newlinecontainer">
+                <p>let message = "Hello, World!";</p>
+                <p>console.log(message + "\n" + "This is a new line.");</p>
+            </div>
+            <p> Escaping strings</p>
+            <div class="string-container">
+                <p>let message = "He said, \"Hello!\"";</p>
+                <p>console.log(message); // Output: He said, "Hello!"</p>
+            </div>
+            <p>String Interpolation and Template Literals</p>
+            <div class="string-container">
+                <p>let name = "Alice";</p>
+                <p>let message = `Hello, ${name}!`; // Using template literals</p>
+                <p>console.log(message); // Output: Hello, Alice!</p>
+            </div>
+
+            <!-- Below are the Methods in JavaScript -->
+
+        <h2 class="methods">Methods</h2>
         <p>Functions are reusable blocks of code that perform a specific task. Like:</p>
         <ul>
-            <li class="functionterm">console.log()</li>
-            <ul>
-                <li class="functiondef">outputs a message to the console</li>
-            </ul>
-            <li class="functionterm">indexOf</li>
-            <ul>
-                <li class="functiondef">returns the index of the first occurrence of a specified value in a string or array. example: message.indexOf("here")</li>
-            </ul>
-            <li class="functionterm">.slice</li>
-            <ul>
-                <li class="functiondef">returns a portion of a string or array based on specified start and end indices. example: message.slice(5)</li>
-            </ul>
-            <li class="functionterm">.toUpperCase() / .toLowerCase()</li>
-            <ul>
-                <li class="functiondef">converts a string to uppercase or lowercase letters. example: message.toUpperCase() or message.toLowerCase()</li>
+            <li class="methodterm">console.log()</li>
+                <ul>
+                    <li class="methoddef">outputs a message to the console</li>
                 </ul>
-            <li class="functionterm">.replace()</li>
-            <ul>
-                <li class="functiondef">replaces a specified value with another value in a string. example: message.replace("old", "new")</li>
+            <li class="methodterm">indexOf()</li>
+                <ul>
+                    <li class="methoddef">returns the index of the first occurrence of a specified value in a string or array. example: message.indexOf("here")</li>
                 </ul>
-            <li class="functionterm">.repeat()</li>
-            <ul>
-                <li class="functiondef">repeats a string a specified number of times. example: message.repeat(3) can also use words assigned as numbers.</li>
-            </ul>
+            <li class="methodterm">.slice()</li>
+                <ul>
+                    <li class="methoddef">returns a portion of a string or array based on specified start and end indices. example: message.slice(5)</li>
+                </ul>
+            <li class="methodterm">.toUpperCase() / .toLowerCase()</li>
+                <ul>
+                    <li class="methoddef">converts a string to uppercase or lowercase letters. example: message.toUpperCase() or message.toLowerCase()</li>
+                </ul>
+            <li class="methodterm">.replace()</li>
+                <ul>
+                    <li class="methoddef">replaces a specified value with another value in a string. example: message.replace("old", "new")</li>
+                </ul>
+            <li class="methodterm">.repeat()</li>
+                <ul>
+                    <li class="methoddef">repeats a string a specified number of times. example: message.repeat(3) can also use words assigned as numbers.</li>
+                </ul>
+            <li class="methodterm">.includes()</li>
+                <ul>
+                    <li class="methoddef">checks if a string contains a specified value and returns true or false. example: message.includes("here")</li>
+                </ul>
+             <li class="methodterm">.trim(), .trimStart(), .trimEnd()</li>
+                <ul>
+                    <li class="methoddef">removes whitespace from the beginning and end of a string. example: message.trim()</li>
+                </ul>   
+            <li class="methodterm">.prompt()</li>
+                <ul>
+                    <li class="methoddef">displays a dialog box that prompts the user for input. example: message.prompt()</li>
+                </ul>          
         </ul>
+
+    </div>  
+    <button id="mathBtn">Math Section</button>
+    <div id="math">
+        <h1 id="mathTitle">Math</h1>
+        <h2 class="mathSection">Working with the Number Data type</h2>
+                <ul>
+                    <li>Definition: JavaScript's Number type includes integers, floating-point numbers, Infinity and NaN.
+                         Floating-point numbers are numbers with a decimal point. Positive Infinity is a number
+                          greater than any other number while -Infinity is a number smaller than any other number.
+                           NaN (Not a Number) represents an invalid numeric value like the string "Jessica".
+                    </li>
+                </ul>   
+        <h2 class="mathSection">Common Arithmetic Operations</h2>
+                <ul>
+                    <li>Addition Operator ( + ) calculates the sum of two values.</li>
+                    <li>Subtraction Operator ( - ) calculates the difference between two values.</li>
+                    <li>Multiplication Operator ( * ) calculates the product of two values.</li>
+                    <li>Division Operator ( / ) calculates the quotient of two values.</li>
+                    <li>Remainder Operator ( % ) calculates the remainder of a division operation.</li>
+                    <li>Exponentiation Operator ( ** ) calculates the power of a value.
+                    
+                </ul>
+            
+        <h2 class="mathSection">Calculations with Numbers and Strings</h2>
+                
+        <h2 class="mathSection">Operator Precedence</h2>
+        <h2 class="mathSection">Increment and Decrement Operators</h2>
+        <h2 class="mathSection">Compound Assignment Operators</h2>
+        <h2 class="mathSection">Booleans and Equality</h2>
+        <h2 class="mathSection">Comparison Operators</h2>
+        <h2 class="mathSection">Unary Operators</h2>
+        <h2 class="mathSection">Bitwise Operators</h2>
+        <h2 class="mathSection">Conditional Statements, Truthy Values, Falsy Values and the Ternary Operator</h2>
+        <h2 class="mathSection">Binary Logical Operators</h2>
+        <h2 class="mathSection">The Math Object</h2>
+        <h2 class="mathSection">Common Number Methods</h2>
 
     </div>
 
-   
+    <!-- Booleans and Numbers from Javascript. 
+     Numbers
+     wholeNumber = 10, 15, 100
+     decimalNumber = 1.5, 3.14159
+     negativeNumber = -500, -2, 
+     NaN = Not a Number
+     
+     Arithmetic Operators
+     
+     Addition Operator +
+     Subtraction Operator - 
+     Multiplication Operator *
+     Division Operator /
+     Remainder Operator % 
+     Exponentiation Operator **-->
 
-    
+     <!-- Operator Precedence
+      Basically PEMDAS. Exponets get calculated from right to left.-->
+
+      <!-- Increment/ decerement Operators
+       ++ or --, they adjust the value ot the variable by 1. They can be:
+       Prefix: ++x gives the new value of x after incrementing it by 1
+       Postfix: x++ gives the original value of x before incrementing it by 1. Same idea with decrementing. "use x first, then increment it". When you log x++, you get 5, but y becomes 6 after that line of code.
+        -->
+   
+    <!-- Compund assignment operators.
+     5 += 2; // equivalent to 5 = 5 + 2 -->
+
+    <!-- Just discovered a function that pairs with Booleans. if(). example: let isRaining = true; if (isRaining) { console.log("Take an umbrella!"); } else { console.log("Enjoy the sunshine!"); } 
+    Equality/inequality operators. ==, != See if the values are equal or not equal. They do not check the data type, just the value.
+    Strict equality/inequality operators. ===, !== See if the values are equal or not equal, and check the data type as well.
+    -->
+
+    <!-- if/else statements
+     if (statement) {
+     console.log("Statement is true!"); 
+     } else {
+     console.log("Statement is false!");
+     }
+     | Term                          | Simple Definition                                                                             |
+| ----------------------------- | --------------------------------------------------------------------------------------------- |
+| **Operator**                  | A symbol that performs an action on a value. Example: `+`, `-`, `++`                          |
+| **Operand**                   | The value an operator works on. Example: in `5 + 2`, the operands are `5` and `2`.            |
+| **Unary operator**            | An operator that works on **one value**. Example: `-5` or `!true`. ([JavaScript Tutorial][1]) |
+| **Binary operator**           | An operator that works on **two values**. Example: `5 + 2`.                                   |
+| **Unary plus (`+`)**          | Converts a value into a number. Example: `+"5"` becomes `5`.                                  |
+| **Unary minus (`-`)**         | Converts a value into a number and makes it negative. Example: `-"5"` becomes `-5`.           |
+| **Logical NOT operator (`!`)**| Converts a value into its boolean opposite. Example: `!true` becomes `false`.                |
+| **Increment operator (`++`)** | Adds 1 to a variable. Example: `count++`.                                                     |
+| **Decrement operator (`--`)** | Subtracts 1 from a variable. Example: `count--`.                                              |
+| **Prefix operator**           | Operator comes before the variable. Example: `++count`.                                       |
+| **Postfix operator**          | Operator comes after the variable. Example: `count++`.                                        |
+| **Expression**                | A piece of code that produces a value. Example: `5 + 3`.                                      |
+| **Value**                     | A piece of data stored or used by a program. Example: `"hello"` or `10`.                      |
+| **Type conversion**           | Changing one data type into another. Example: string → number.                                |
+|                                                           |
+| **Number**                    | Numeric data. Example: `42`.                                                                  |
+|                                                          |
+| **Assignment**                | Storing a value in a variable using `=`. Example: `x = 5`.                                    |
+| **Mutation** 
+|**Logical AND Operator (&&) ** |checks if both operands are true and returns a result. If true, it returns rightmost value     |
+|**Logical OR Operator (||)** | checks if at least one operand is true and returns a result. If true, it returns the true value |
+| ** nullish coalescing         
+    operator (??)**             | returns the right-hand operand when the left-hand operand is null or undefined. 
+                                    Otherwise, it returns the left-hand operand.                                                |
+|**Ternary operator:            |   condition ? expressionIfTrue : expressionIfFalse; Compact way to write if/else statements.  |
+     
+     -->
+
+    <script src="script.js"></script>
 </body>
 </html>
