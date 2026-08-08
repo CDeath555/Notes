@@ -13,3 +13,6 @@ const contentBox2 = document.querySelector('#javascript');
 toggleBtn2.addEventListener('click', function() {
   contentBox2.classList.toggle('isVisible');
 });
+
+let silenceCreation = {"matcher" : {"environment": "production", "isEqual": true}}
+console.log(silenceCreation["matcher"]["isEqual"]);

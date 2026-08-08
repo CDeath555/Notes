@@ -456,89 +456,233 @@
                 </ul>
             
         <h2 class="mathSection">Calculations with Numbers and Strings</h2>
-                
+             <ul>
+                 <li><b>Explanation</b>: When you use the + operator with a number and a string, JavaScript will 
+                        coerce the number into a <u>string</u> and concatenate the two values. When you use
+                         the -, * or / operators with a string and number, JavaScript will coerce the string
+                          into a number and the result will be a number. For null and undefined, JavaScript
+                           treats null as 0 and undefined as NaN in mathematical operations.</li>
+                <li>Example:</li>
+                    <div class="mathExample">
+                        <p>let num = 5;</p>
+                        <p>let str = "10";</p>
+                        <p>console.log(num + str); // Output: "510" (string concatenation)</p>
+                        <p>console.log(num - str); // Output: -5 (number subtraction)</p>
+                        <p>console.log(num * str); // Output: 50 (number multiplication)</p>
+                        <p>console.log(num / str); // Output: 0.5 (number division)</p>
+                        <p>const result1 = null + 5; <br>
+                        console.log(result1); // Output: 5 <br>
+                        console.log(typeof result1); // Output: "number"</p>
+                        <p>const result2 = undefined + 5; <br>
+                        console.log(result2); // output: NaN <br>
+                        console.log(typeof result2); // Output: "number"</p>
+                                                       
+                      </div></ul> 
         <h2 class="mathSection">Operator Precedence</h2>
+                      <ul>
+                        <li>This is basically PEMDAS from school -_-; only thing of note is
+                            that exponets get calculated from right to left. 2**3**4 means you start from 
+                            4, then 3, then 2. So 3**4 = 81, then 2**81 = a really big number.
+                        </li>
+                        <li>Example:<br>
+                            <div class="mathExample">
+                                <p>let x = 5;<br>
+                                let y = ++x; // y is 6, x is 6 <br>
+                                let z = x++; // z is 6, x is 7 <br>
+                            </div>
+                        </li>
+                      </ul>
+
         <h2 class="mathSection">Increment and Decrement Operators</h2>
+                      <ul>
+                        <li>Increment operator is used to increase the value by one. The prefix notation `++num`
+                        increments the value before using it, while the postfix notation `num++` uses the
+                            original value before incrementing it. Decrement operator works similarly but decreases
+                            the value by one.
+                        </li>
+                        <li>Example:<br>
+                            <div class="mathExample">
+                                <p>let x = 5;<br>
+                                console.log(++x); //output: 6 <br>
+                                console.log(x); //output: 6 <br></p>
+                                <p>let y = 5;<br>
+                                console.log(y--); //output: 5 <br>
+                                console.log(y); //output: 4 <br></p>
+                            </div>
+
+                        </li>
+                      </ul>
         <h2 class="mathSection">Compound Assignment Operators</h2>
+                      <ul>
+                        <li>Addition (+=) performs addition and assignment in one operation.</li>
+                        <li>Subtraction (-=) performs subtraction and assignment in one operation.</li>
+                        <li>Multiplication (*=) performs multiplication and assignment in one operation.</li>
+                        <li>Division (/=) performs division and assignment in one operation.</li>
+                        <li>Remainder (%=) performs remainder calculation and assignment in one operation.</li>
+                        <li>Exponentiation (**=) performs exponentiation and assignment in one operation.</li>
+                        <li>Example:<br>
+                            <div class="mathExample">
+                                <p>let x = 5;<br>
+                                x += 3; // x is now 8 <br>
+                                x -= 2; // x is now 6 <br>
+                                x *= 4; // x is now 24 <br>
+                                x /= 6; // x is now 4 <br>
+                                x %= 3; // x is now 1 <br>
+                                x **= 2; // x is now 1 <br></p>
+                            </div>
+
+                        </li>
+                      </ul>
         <h2 class="mathSection">Booleans and Equality</h2>
+                      <ul>
+                        <li>A Boolean is a data type that can only be true or false.</li>
+                        <li>Equality operators perform type coercion before checking if two values are equal (==) or not equal (!=).</li>
+                        <li>Strict equality operators check if two values are equal and have the same data type (===) or not equal (!==).</li>
+                        <li>example:<br>
+                            <div class="mathExample">
+                                <p>let x = 5;<br>
+                                let y = "5";<br>
+                                console.log(x == y); // Output: true (type coercion)<br>
+                                console.log(x === y); // Output: false (no type coercion)<br>
+                                console.log(x != y); // Output: false (type coercion)<br>
+                                console.log(x !== y); // Output: true (no type coercion)<br></p>
+                            </div>
+                        </li>
+                      </ul>
         <h2 class="mathSection">Comparison Operators</h2>
+                        <ul>
+                            <li>Greater than (>) checks if the left value is greater than the right value.</li>
+                            <li>Less than (<) checks if the left value is less than the right value.</li>
+                            <li>Greater than or equal to (>=) checks if the left value is greater than or equal to the right value.</li>
+                            <li>Less than or equal to (<=) checks if the left value is less than or equal to the right value.</li>
+                            <li>Example:<br>
+                                <div class="mathExample">
+                                    <p>let x = 5;<br>
+                                    let y = 10;<br>
+                                    console.log(x > y); // Output: false<br>
+                                    console.log(x < y); // Output: true<br>
+                                    console.log(x >= 5); // Output: true<br>
+                                    console.log(y <= 10); // Output: true<br></p>
+                                </div>
+                            </li>
+                        </ul>
         <h2 class="mathSection">Unary Operators</h2>
+                        <ul>
+                                <li>Unary plus (+) converts a value into a number.</li>
+                                <li>Unary minus (-) converts a value into a number and makes it negative.</li>
+                                <li>Logical NOT operator (!) converts a value into its boolean opposite.</li>
+                                <li>Example:<br>
+                                    <div class="mathExample">
+                                        <p>let x = "5";<br>
+                                        console.log(+x); // Output: 5 (number)<br>
+                                        console.log(-x); // Output: -5 (number)<br>
+                                        console.log(!true); // Output: false<br></p>
+                                    </div>
+                                </li>
+                            </ul>
         <h2 class="mathSection">Bitwise Operators</h2>
+                        <ul>
+                                <li>Bitwise AND (&) performs a bitwise AND operation on two values.</li>
+                                <li>Bitwise OR (|) performs a bitwise OR operation on two values.</li>
+                                <li>Bitwise XOR (^) performs a bitwise XOR operation on two values.</li>
+                                <li>Bitwise NOT (~) inverts the bits of a value.</li>
+                                <li>Left shift (<<) shifts the bits of a value to the left by a specified number of positions.</li>
+                                <li>Right shift (>>) shifts the bits of a value to the right by a specified number of positions.</li>
+                                <li>Unsigned right shift (>>>) shifts the bits of a value to the right by a specified number of positions, filling with zeros.</li>
+                                <li>Example:<br>
+                                    <div class="mathExample">
+                                        <p>let x = 5; // Binary: 0101<br>
+                                        let y = 3; // Binary: 0011<br>
+                                        console.log(x & y); // Output: 1 (Binary: 0001)<br>
+                                        console.log(x | y); // Output: 7 (Binary: 0111)<br>
+                                        console.log(x ^ y); // Output: 6 (Binary: 0110)<br>
+                                        console.log(~x); // Output: -6 (Binary: 1010)<br>
+                                        console.log(x << 1); // Output: 10 (Binary: 1010)<br>
+                                        console.log(x >> 1); // Output: 2 (Binary: 0010)<br>
+                                        console.log(x >>> 1); // Output: 2 (Binary: 0010)<br></p>
+                                    </div>
+                                </li>
+                            </ul>
         <h2 class="mathSection">Conditional Statements, Truthy Values, Falsy Values and the Ternary Operator</h2>
+            <ul>
+                     <li>if/else if/else: An if statement takes a condition and runs a block of code if that condition is truthy.
+                         If the condition is false, then it moves to the else if block. If none of those conditions are true, 
+                         then it will execute the else clause. Truthy values are any values that result in true when evaluated 
+                         in a Boolean context like an if statement. Falsy values are values that evaluate to false in a Boolean context.</li>
+                    <li>Conditional statements allow you to execute different blocks of code based on certain conditions.</li>
+                    <li>Truthy values are values that evaluate to true in a boolean context, while falsy values evaluate to false.</li>
+                    <li>The ternary operator is a compact way to write if/else statements. It has the syntax: condition ? expressionIfTrue : expressionIfFalse;</li>
+                    <li>Example of if/else statements:<br>
+                        <div class="mathExample">
+                             <p>let isRaining = true;<br>
+                            if (isRaining) {<br>
+                            &nbsp;&nbsp;console.log("Take an umbrella!");<br>
+                            } else {<br>
+                            &nbsp;&nbsp;console.log("Enjoy the sunshine!");<br>
+                             }<br></p>
+                         </div>
+                     </li>
+                     <li>Example of ternary operator:<br>
+                        <div class="mathExample">
+                            <p>let isRaining = true;<br>
+                                            isRaining<br>
+                                             ? console.log("Take an umbrella!")<br>
+                                             : console.log("Enjoy the sunshine!");<br></p>
+                        </div>
+                    </li>
+                 </ul>  
         <h2 class="mathSection">Binary Logical Operators</h2>
+             <ul>
+                     <li>Logical AND (&&) checks if both operands are true and returns a result. If true, it returns the rightmost value.</li>
+                     <li>Logical OR (||) checks if at least one operand is true and returns a result. If true, it returns the true value.</li>
+                     <li>Nullish coalescing operator (??) returns the right-hand operand when the left-hand operand is null or undefined. Otherwise, it returns the left-hand operand.</li>
+                     <li>Example:<br>
+                         <div class="mathExample">
+                              <p>let x = 5;<br>
+                                    let y = 10;<br>
+                                     console.log(x && y); // Output: 10 (both operands are true)<br>
+                                     console.log(x || y); // Output: 5 (at least one operand is true)<br>
+                                     console.log(null ?? "default"); // Output: "default" (left operand is null)<br>
+                                     console.log(undefined ?? "default"); // Output: "default" (left operand is undefined)<br></p>
+                         </div>
+                     </li>
+                 </ul>
         <h2 class="mathSection">The Math Object</h2>
+             <ul>
+                 <li>Math.random(): Returns a random number between 0(inclusive) and 1(exclusive).</li>
+                 <li>Math.max(): Returns the largest of zero or more numbers.</li>
+                 <li>Math.min(): Returns the smallest of zero or more numbers.</li>
+                 <li>Math.ceil(): Rounds a number up to the nearest integer.</li>
+                 <li>Math.floor(): Rounds a number down to the nearest integer.</li>
+                 <li>Math.round(): Rounds a number to the nearest integer.</li>
+                 <li>Math.abs(): Returns the absolute value of a number.</li>
+                 <li>Math.pow(): Returns the base to the exponent power, that is, base^exponent.</li>
+                 <li>Math.sqrt(): Returns the square root of a number.</li>
+                 <li>Math.cbrt(): Returns the cube root of a number.</li>
+                 <div class="mathExample">
+                     <p>The formula for generating a random number between two values (inclusive) is:<br>
+                        <code>Math.floor(Math.random() * (max - min + 1)) + min</code>
+                     </p>
+                </div>
+            </ul>
         <h2 class="mathSection">Common Number Methods</h2>
+            <p>isNaN(): Checks if a value is NaN (Not a Number).</p>
+            <p>Number.isNaN() provides a more 
+            reliable way to check for NaN values, especially in cases where type coercion might
+             lead to unexpected results with the global isNaN() function.
+            </p>
+            <div class="mathExample">
+                <p>let value1 = NaN;<br>
+                let value2 = "Hello";<br>
+                console.log(isNaN(value1)); // Output: true<br>
+                console.log(isNaN(value2)); // Output: true (type coercion)<br>
+                console.log(Number.isNaN(value1)); // Output: true<br>
+                console.log(Number.isNaN(value2)); // Output: false (no type coercion)<br></p>
+            <p> parseFloat(): The parse float method converts a string to a floating-point number.</p>
+            <p> parseInt(): The parse int method converts a string to an integer.</p>
+            <p> toFixed(): The to fixed method formats a number using fixed-point notation.</p>
 
     </div>
-
-    <!-- Booleans and Numbers from Javascript. 
-     Numbers
-     wholeNumber = 10, 15, 100
-     decimalNumber = 1.5, 3.14159
-     negativeNumber = -500, -2, 
-     NaN = Not a Number
-     
-     Arithmetic Operators
-     
-     Addition Operator +
-     Subtraction Operator - 
-     Multiplication Operator *
-     Division Operator /
-     Remainder Operator % 
-     Exponentiation Operator **-->
-
-     <!-- Operator Precedence
-      Basically PEMDAS. Exponets get calculated from right to left.-->
-
-      <!-- Increment/ decerement Operators
-       ++ or --, they adjust the value ot the variable by 1. They can be:
-       Prefix: ++x gives the new value of x after incrementing it by 1
-       Postfix: x++ gives the original value of x before incrementing it by 1. Same idea with decrementing. "use x first, then increment it". When you log x++, you get 5, but y becomes 6 after that line of code.
-        -->
-   
-    <!-- Compund assignment operators.
-     5 += 2; // equivalent to 5 = 5 + 2 -->
-
-    <!-- Just discovered a function that pairs with Booleans. if(). example: let isRaining = true; if (isRaining) { console.log("Take an umbrella!"); } else { console.log("Enjoy the sunshine!"); } 
-    Equality/inequality operators. ==, != See if the values are equal or not equal. They do not check the data type, just the value.
-    Strict equality/inequality operators. ===, !== See if the values are equal or not equal, and check the data type as well.
-    -->
-
-    <!-- if/else statements
-     if (statement) {
-     console.log("Statement is true!"); 
-     } else {
-     console.log("Statement is false!");
-     }
-     | Term                          | Simple Definition                                                                             |
-| ----------------------------- | --------------------------------------------------------------------------------------------- |
-| **Operator**                  | A symbol that performs an action on a value. Example: `+`, `-`, `++`                          |
-| **Operand**                   | The value an operator works on. Example: in `5 + 2`, the operands are `5` and `2`.            |
-| **Unary operator**            | An operator that works on **one value**. Example: `-5` or `!true`. ([JavaScript Tutorial][1]) |
-| **Binary operator**           | An operator that works on **two values**. Example: `5 + 2`.                                   |
-| **Unary plus (`+`)**          | Converts a value into a number. Example: `+"5"` becomes `5`.                                  |
-| **Unary minus (`-`)**         | Converts a value into a number and makes it negative. Example: `-"5"` becomes `-5`.           |
-| **Logical NOT operator (`!`)**| Converts a value into its boolean opposite. Example: `!true` becomes `false`.                |
-| **Increment operator (`++`)** | Adds 1 to a variable. Example: `count++`.                                                     |
-| **Decrement operator (`--`)** | Subtracts 1 from a variable. Example: `count--`.                                              |
-| **Prefix operator**           | Operator comes before the variable. Example: `++count`.                                       |
-| **Postfix operator**          | Operator comes after the variable. Example: `count++`.                                        |
-| **Expression**                | A piece of code that produces a value. Example: `5 + 3`.                                      |
-| **Value**                     | A piece of data stored or used by a program. Example: `"hello"` or `10`.                      |
-| **Type conversion**           | Changing one data type into another. Example: string → number.                                |
-|                                                           |
-| **Number**                    | Numeric data. Example: `42`.                                                                  |
-|                                                          |
-| **Assignment**                | Storing a value in a variable using `=`. Example: `x = 5`.                                    |
-| **Mutation** 
-|**Logical AND Operator (&&) ** |checks if both operands are true and returns a result. If true, it returns rightmost value     |
-|**Logical OR Operator (||)** | checks if at least one operand is true and returns a result. If true, it returns the true value |
-| ** nullish coalescing         
-    operator (??)**             | returns the right-hand operand when the left-hand operand is null or undefined. 
-                                    Otherwise, it returns the left-hand operand.                                                |
-|**Ternary operator:            |   condition ? expressionIfTrue : expressionIfFalse; Compact way to write if/else statements.  |
-     
-     -->
 
     <script src="script.js"></script>
 </body>
